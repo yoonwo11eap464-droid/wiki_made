@@ -1,0 +1,10 @@
+---
+layout: base.njk
+---
+<article class="wiki-entry">
+  <p class="category-badge">{{ category }}</p>
+  <h1>{{ title }}</h1>
+  <div class="wiki-body">
+    {{ content | safe }}
+  </div>
+</article>

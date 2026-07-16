@@ -1,0 +1,91 @@
+:root {
+  --bg: #14161a;
+  --surface: #1d2026;
+  --text: #e7e9ee;
+  --muted: #9aa1ac;
+  --accent: #7c9cff;
+  --border: #2a2e37;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, "Pretendard", "Noto Sans KR", sans-serif;
+  line-height: 1.7;
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.site-header .brand {
+  font-weight: 700;
+  color: var(--text);
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.site-header nav a {
+  color: var(--muted);
+  text-decoration: none;
+  margin-left: 1.25rem;
+}
+
+.site-header nav a:hover { color: var(--accent); }
+
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem;
+}
+
+h1 { margin-top: 0; }
+
+.lead { color: var(--muted); }
+
+.wiki-list {
+  list-style: none;
+  padding: 0;
+}
+
+.wiki-list li {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.wiki-list a {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.wiki-list a:hover { color: var(--accent); }
+
+.tag, .category-badge {
+  font-size: 0.75rem;
+  color: var(--accent);
+  background: rgba(124, 156, 255, 0.12);
+  padding: 0.15rem 0.5rem;
+  border-radius: 999px;
+}
+
+.wiki-entry .category-badge { display: inline-block; margin-bottom: 0.5rem; }
+
+.site-footer {
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.8rem;
+  padding: 2rem 0;
+}
+
+a { color: var(--accent); }
